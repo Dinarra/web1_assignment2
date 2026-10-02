@@ -1,58 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2 Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="portfolio.css">
-</head>
-<body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="images/logo.jpg" alt="logotype">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Cards</a></li>
-                <li><a href="Layout.html">Layout</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Portfolio.html" class="active">Portfolio</a></li>
-            </ul>
-        </nav>
-    </header>
+.portfolio {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "projects info"
+        "footer footer";
+    gap: 20px;
+    padding: 20px;
+}
 
-    <div class="portfolio">
-        <main class="projects">
-            <h1 class="page-title">My Projects</h1>
+.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
-            <article class="project">
-                <h3>Project One</h3>
-                <p>Short description of the first project.</p>
-                <a href="#" class="btn">View project</a>
-            </article>
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(44, 3, 24, 0.2);
+}
 
-            <article class="project">
-                <h3>Project Two</h3>
-                <p>Short description of the second project.</p>
-                <a href="#" class="btn">View project</a>
-            </article>
+.project .btn {
+    align-self: flex-start;
+    margin-top: 0;
+}
 
-            <article class="project">
-                <h3>Project Three</h3>
-                <p>Short description of the third project.</p>
-                <a href="#" class="btn">View project</a>
-            </article>
-        </main>
+.info {
+    grid-area: info;
+    align-self: start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(44, 3, 24, 0.2);
+}
 
-        <aside class="info">
-            <h3>About me</h3>
-            <p>Write a few sentences about yourself, your group and what you study.</p>
-        </aside>
+.portfolio-footer {
+    grid-area: footer;
+    background-color: #480436;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
 
-        <footer class="portfolio-footer">
-            <p>&copy; 2026 My Portfolio</p>
-        </footer>
-    </div>
-</body>
-</html>
+@media (max-width: 700px) {
+    .portfolio {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "projects"
+            "info"
+            "footer";
+    }
+}
