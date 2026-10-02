@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="logotype">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Cards</a></li>
+                <li><a href="Layout.html">Layout</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Portfolio.html" class="active">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="portfolio">
+        <main class="projects">
+            <h1 class="page-title">My Projects</h1>
+
+            <article class="project">
+                <h3>Project One</h3>
+                <p>Short description of the first project.</p>
+                <a href="#" class="btn">View project</a>
+            </article>
+
+            <article class="project">
+                <h3>Project Two</h3>
+                <p>Short description of the second project.</p>
+                <a href="#" class="btn">View project</a>
+            </article>
+
+            <article class="project">
+                <h3>Project Three</h3>
+                <p>Short description of the third project.</p>
+                <a href="#" class="btn">View project</a>
+            </article>
+        </main>
+
+        <aside class="info">
+            <h3>About me</h3>
+            <p>Write a few sentences about yourself, your group and what you study.</p>
+        </aside>
+
+        <footer class="portfolio-footer">
+            <p>&copy; 2026 My Portfolio</p>
+        </footer>
+    </div>
+</body>
+</html>
