@@ -1,7 +1,7 @@
 # Assignment 2: Advanced CSS (Flexbox & Grid)
 
-Student: Your Name
-Group: Your Group
+Student: Dinara
+Group: SE-2526
 
 ## Description
 Multi-page website made with HTML and CSS using Flexbox and CSS Grid.
@@ -16,4 +16,4 @@ Multi-page website made with HTML and CSS using Flexbox and CSS Grid.
 Open index.html in a browser. No installation needed.
 
 ## Live demo
-https://your-username.github.io/your-repo/
+https://dinarra.github.io/web1_assignment/
